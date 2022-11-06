@@ -130,5 +130,4 @@ public class MesException {
 		}
 		this.ano = 2022;
 	}
-	
 }
