@@ -1,0 +1,134 @@
+public class MesException {
+
+	private int mes;
+	private int dia;
+	private int ano;
+	
+	 public static void main(String[] args) throws DataException{
+	        Data data = new Data();
+	        
+	        try{
+	        	data.setAno((int)2022);
+	        }catch(DataException ex){
+	            System.out.println("Erro: ano inserido inválido");
+	            System.out.println("Classe: " + ex.getClass());
+	            System.out.println(" ");
+	        }
+	        try{
+	        	data.setMes((int)2);
+	        }catch(DataException ex){
+	            System.out.println("Erro: mês inserido inválido");
+	            System.out.println("Classe: " + ex.getClass());
+	            System.out.println(" ");
+	        }
+	        try{
+	        	data.setDia((int)29);
+	        }catch(DiaException ex){
+	            System.out.println("Erro: dia inserido inválido");
+	            System.out.println("Classe: " + ex.getClass());
+	            System.out.println(" ");
+	        }
+	        finally{
+	            System.err.println("Liberando recursos alocados");
+	        }
+	    }
+	
+	public void Janeiro (int mes, int dia, int ano) {
+		mes = 1;
+		if (dia > 0 && dia <= 31) {	
+			throw new DataException();
+			this.dia = dia;
+			
+		}
+		this.ano = 2022;
+	}
+	public void Fevereiro (int mes, int dia, int ano) {
+		this.mes = 2;
+		if (dia > 0 && dia <= 28) {	
+			throw new DataException();
+			this.dia = dia;
+		}
+		this.ano = 2022;
+	}
+	public void Março (int mes, int dia, int ano) {
+		this.mes = 3;
+		if (dia > 0 && dia <= 31) {	
+			throw new DataException();
+			this.dia = dia;
+		}
+		this.ano = 2022;
+	}
+	public void Abril (int mes, int dia, int ano) {
+		this.mes = 4;
+		if (dia > 0 && dia <= 30) {	
+			throw new DataException();
+			this.dia = dia;
+		}
+		this.ano = 2022;
+	}
+	public void Maio (int mes, int dia, int ano) {
+		this.mes = 5;
+		if (dia > 0 && dia <= 31) {	
+			throw new DataException();
+			this.dia = dia;
+		}
+		this.ano = 2022;
+	}
+	public void Junho (int mes, int dia, int ano) {
+		this.mes = 6;
+		if (dia > 0 && dia <= 30) {	
+			throw new DataException();
+			this.dia = dia;
+		}
+		this.ano = 2022;
+	}
+	public void Julho (int mes, int dia, int ano) {
+		this.mes = 7;
+		if (dia > 0 && dia <= 31) {	
+			throw new DataException();
+			this.dia = dia;
+		}
+		this.ano = 2022;
+	}
+	public void Agosto (int mes, int dia, int ano) {
+		this.mes = 8;
+		if (dia > 0 && dia <= 31) {	
+			throw new DataException();
+			this.dia = dia;
+		}
+		this.ano = 2022;
+	}
+	public void Setembro (int mes, int dia, int ano) {
+		this.mes = 9;
+		if (dia > 0 && dia <= 30) {	
+			throw new DataException();
+			this.dia = dia;
+		}
+		this.ano = 2022;
+	}
+	public void Outubro (int mes, int dia, int ano) {
+		this.mes = 10;
+		if (dia > 0 && dia <= 31) {	
+			throw new DataException();
+			this.dia = dia;
+		}
+		this.ano = 2022;
+	}
+	public void Novembro (int mes, int dia, int ano) {
+		this.mes = 11;
+		if (dia > 0 && dia <= 30) {
+			throw new DataException();
+			this.dia = dia;
+		}
+		this.ano = 2022;
+	}
+	public void Dezembro (int mes, int dia, int ano) {
+		this.mes = 12;
+		if (dia > 0 && dia <= 31) {
+			throw new DataException();
+			this.dia = dia;
+		}
+		this.ano = 2022;
+	}
+	
+}
