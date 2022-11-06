@@ -43,6 +43,5 @@ public class Data {
 	            this.day = day;
 	    }
 
-
 	 }
 	 
